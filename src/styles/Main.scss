@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}   
+body{
+    background-color: rgb(30, 37, 87);
+
+}
+h1{
+    margin-bottom: 5%;
+    font-size: 3rem;
+}
+body::-webkit-scrollbar{
+    width: .5rem;
+    background-color: none;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: rgba(116, 116, 189, 0.757);
+    border-radius: 5px;
+    height: .5rem;
+}

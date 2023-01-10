@@ -1,36 +1,22 @@
-import { useState } from "react";
-import { useEffect } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Header from "./Header"
+import Home from "./Home"
 
-function App() {
-  const [cryptos, setCryptos] = useState();
+const App = () =>{
 
-  useEffect(() => {
-    fetch("https://api.coincap.io/v2/assets")
-      .then((response) => response.json())
-      .then((data) => setCryptos(data.data))
-      .catch(console.error("404 Data no foud"));
-  }, []);
+  return(
+      
+    <BrowserRouter>
+      <Header/>
+      <Routes>
+        <Route path="/" element= {<Home/>} />
+        <Route/>
+        <Route/>
+      </Routes>
+    </BrowserRouter>
+     
+  )
 
-  
-
-  return (
-    <>
-      <h1>Lista de crypto </h1>
-
-      <ol>
-        {cryptos ?
-          cryptos.map(({id, name, priceUsd}) => {
-            return (
-            <li key={id}>
-             Name: {name}   Price: {priceUsd}</li>
-            )
-          }):
-
-          <h1>Loading</h1>
-        }
-      </ol>
-    </>
-  );
 }
 
-export default App;
+export default App
