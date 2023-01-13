@@ -1,0 +1,12 @@
+.boton{
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    background-color: aliceblue;
+    height: 100px;
+    width: 100px;
+}
+.boton img{
+    width: 50px;
+    margin: auto;
+}

@@ -1,0 +1,71 @@
+.login-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 2em;
+    border-radius: 20px;
+    position: absolute;
+    top:30%;
+    left: 40%;
+    background-color: rgb(220, 231, 232);
+    align-items: center;
+}
+.login-container h1{
+    color: rgb(73, 127, 189);
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    padding: 2em;
+}
+.field{
+    display: flex;
+    flex-direction: column;
+    color: #363636;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.field input{
+    border: solid .01em;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: .5em;
+    color: #2c2c2c;
+    border-radius: .3em;
+}
+.submit{
+    display: flex;
+    gap: 0.5em;
+    padding: 1em;
+    min-width: 324px;
+    justify-content: center;
+}
+.submit input{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+    color: beige;
+    padding: .8em .5em;
+    border-radius: .5em;
+    border: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.submit input[value="Registrarse"],[value="Cargando..."]{
+    background-color: rgb(223, 74, 74);
+}
+.submit input[value="Ingresar"]{
+    background-color: rgb(74, 126, 223);
+}
+.errorForm{
+    color: red;
+    font-family: sans-serif;
+    font-size: 1rem; 
+    height: 1em;
+}
+
+

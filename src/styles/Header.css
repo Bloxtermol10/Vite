@@ -1,8 +1,11 @@
 .wrapper-header{
+    
     background-color: beige;
     height: 10vh;
     padding: 2%  5%;
+    
     justify-content: space-between;
+
 }
 .wrapper-header , .content-header{
     display: flex;
@@ -13,12 +16,12 @@
 .content-header{
     font-weight: bold;
     gap: 1em;
-
+    
 }
 .logo{
     object-fit: fill;
     width: 4rem;
 }
-.content-header > li {
+.item-header {
     color: black;
 }
